@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!-- Autor: Ing. Ondrej Lycka (http://www.seahu.cz) all rights reserved -->
+
+<svg    xmlns="http://www.w3.org/2000/svg"
+	xmlns:xlink="http://www.w3.org/1999/xlink">
+
+	<!-- start of basic svg entries for create water flow effect -->
+	<!-- next code must be add into svg image where you plan use this effect -->
+	<defs>
+		<!-- gradient definition for blur of stripes used in pattern -->
+		<filter id="f1" >
+			<feGaussianBlur in="SourceGraphic" stdDeviation="2" />
+		</filter>
+		<!-- patern definition stripts -->
+		<pattern id="pattern_water_flow__animated_effect"
+				x="0" y="0" width="20" height="20"
+				patternUnits="userSpaceOnUse"
+				patternTransform="rotate(45)" >
+			<g filter="url(#f1)">
+				<rect width="25" height="25" x="0" y="0" fill="#000000" fill-opacity="0"/>
+				<line x1="10" y1="-5" x2="10" y2="25" style="stroke:rgb(255,255,255);stroke-width:7"  stroke-opacity="0.2"  />
+			</g>
+		</pattern>
+		<animate 
+			xlink:href="#pattern_water_flow__animated_effect"
+			attributeName="x"
+			from="0"
+			to="20" 
+			dur="1s"
+			repeatCount="indefinite"/>
+	</defs>
+	<!-- end of basic svg entries for create water flow effect -->
+
+	<defs>
+		
+	</defs>
+
+
+
+<!-- example howto use water flow effect inside svg image source -->
+<rect x="10" y="10" width="200" height="200"
+    style="stroke: #000000; fill: url(#pattern_water_flow__animated_effect);" />    
+
+</svg>

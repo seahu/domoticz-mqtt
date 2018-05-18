@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8" />
+		<script src="js/jquery.min.js"></script>
+		<script src="config2.js"></script>
+		<script src="js/domMQTTsvg/lib_auxliary_functions.js"></script>
+		<script src="js/mqttws31.js"></script>
+		<script src="js/domMQTTsvg/lib_base_mqtt.js"></script>
+		<script src="js/domMQTTsvg/lib_load_svg.js"></script>
+		<script src="js/domMQTTsvg/lib_set_points.js"></script>
+		<script src="js/domMQTTsvg/lib_switchs.js"></script>
+		<script src="js/domMQTTsvg/lib_temperatures.js"></script>
+		<script src="js/domMQTTsvg/lib_get_position.js"></script>
+		<script src="js/domMQTTsvg/lib_clocks.js"></script>
+	</head>
+
+	<body>
+		<div <div style='position: relative;'>
+			<img id="off-on-line" src="img/offline.png" width="50px">
+			<br>
+			<div style='position: relative'>
+				Active IMAGE type switch (click into image change ON/OFF status):<br>
+				<img id="sw_1" src="img/bulb.svg" width="50px">
+			</div>
+			<div>
+				STYLE type switch (change CSS style parameter in this example width of image by switch status):<br>
+				<img id="sw_2" src="img/bulb.svg" width="50px">
+			</div>
+			<div>
+				ANIMATE_STROKE type of presentation switch (switch status ON=animation, OFF=noanimation)
+				<br>
+				<svg width="120px" height="120" viewBox="0 0 120 120" xmlns="http://www.w3.org/2000/svg">
+					<line id="sw_3" x1="20" y1="100" x2="100" y2="20" stroke-width="2" stroke="black" stroke-dasharray="20"/>
+				</svg>
+			</div>
+			<div>
+				Combine more setting into one graphic element
+				<br>
+				<svg width="120px" height="120" viewBox="0 0 120 120" xmlns="http://www.w3.org/2000/svg">
+					<line id="sw_4" x1="20" y1="100" x2="100" y2="20" stroke-width="1" stroke="black" stroke-dasharray="20"/>
+				</svg>
+			</div>
+		</div>
+	</body>
+</html> 

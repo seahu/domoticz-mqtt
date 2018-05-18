@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8" />
+		<script src="js/jquery.min.js"></script>
+		<script src="config3.js"></script>
+		<script src="js/domMQTTsvg/lib_auxliary_functions.js"></script>
+		<script src="js/mqttws31.js"></script>
+		<script src="js/domMQTTsvg/lib_base_mqtt.js"></script>
+		<script src="js/domMQTTsvg/lib_load_svg.js"></script>
+		<script src="js/domMQTTsvg/lib_set_points.js"></script>
+		<script src="js/domMQTTsvg/lib_switchs.js"></script>
+		<script src="js/domMQTTsvg/lib_temperatures.js"></script>
+		<script src="js/domMQTTsvg/lib_get_position.js"></script>
+		<script src="js/domMQTTsvg/lib_clocks.js"></script>
+	</head>
+
+	<body>
+		<div <div style='position: relative;'>
+			<img id="off-on-line" src="img/offline.png" width="50px">
+			<br>
+			Set value to domoticz:
+			<div style='position: relative'>
+				<div id="sval_1"> </div>
+			</div>
+			<div style='position: relative'>
+				Value from domoticz to TEXT: <span id="sval_2">--</span> Watt/m2
+			</div>
+			<br>
+			<div id="sval_3" style='position: relative'>
+				value from domoticz to COLOR.<br>
+			</div>
+			<br>
+			<div style='position: relative;'>
+				Value from domoticz to VALUE %:<br>
+				<div style='position: relative; background-color: gray; width: 300px;'>
+					<div id="sval_4" style="width: 0%;background-color: red;">&nbsp</div>
+				</div>
+			</div>
+			<br>
+			<div style='position: relative;'>
+				Value from domoticz to VALUE 100-%:<br>
+				<div style='position: relative; background-color: gray; width: 300px;'>
+					<div id="sval_5" style="width: 0%;background-color: red;">&nbsp</div>
+				</div>
+			</div>
+			<br>
+			<div style='position: relative;'>
+				Value from domoticz to VALUE (change size of image):<br>
+				<img id="sval_6" src="img/Sun_animation.svg" width="0px">
+			</div>
+			<br>
+			<div style='position: relative;'>
+				Combine more setting into one graphic element <br>
+				<div style='position: relative; width: 300px;background-color: gray;'>
+					<div style='position: absolute; width: 100%;background-color: gray;;border: 3px solid green'> &nbsp </div>
+					<div id="sval_8" style='position: absolute; width: 0%;background-color: red; left: 3px; top: 3px;'> &nbsp </div>
+					<div id="sval_7" style='position: absolute; width: 100%;text-align: center; left: 3px; top: 3px;'> -- </div>
+				</div>
+			</div>
+		
+		</div>
+	</body>
+</html> 

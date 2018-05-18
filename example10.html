@@ -1,0 +1,90 @@
+<html
+ <head>
+	<meta charset="utf-8" />
+<script src="js/jquery.min.js"></script>
+<script src="config10.js"></script>
+
+<script src="js/domMQTTsvg/lib_auxliary_functions.js"></script>
+<script src="js/mqttws31.js"></script>
+<script src="js/domMQTTsvg/lib_base_mqtt.js"></script>
+<script src="js/domMQTTsvg/lib_load_svg.js"></script>
+<script src="js/domMQTTsvg/lib_set_points.js"></script>
+<script src="js/domMQTTsvg/lib_switchs.js"></script>
+<script src="js/domMQTTsvg/lib_temperatures.js"></script>
+<script src="js/domMQTTsvg/lib_get_position.js"></script>
+<script src="js/domMQTTsvg/lib_clocks.js"></script>
+
+</head> 
+<body id="body" style="background-image: url('img/background_DAY.svg')">
+
+
+<div style='position: relative;'>
+	<div id="Aa" setLocation='yes' style='position: absolute; left: 182px; top: 3px'>
+		<div id="pokus1" type="svg" src="img/solarko_v1.svg" ></div>
+	</div>
+	<div id="Ba" setLocation='yes' style='position: absolute; left: 364px; top: 529px'>
+		<img src="img/pump_grunfos.svg" id="cerpadlo" height="70" width="48">
+	</div>
+	<div id="Aa" setLocation='yes' style='position: absolute; left: 914px; top: 537px'>
+		<img src="img/pump_wilo.svg" id="cerpadlo_cirkuace" height="70" width="48">
+	</div>
+	<div id="Ab" setLocation='yes' style='position: absolute; left: 531px; top: 263px'>
+		<img src="img/no_img.svg" id="plynovy_kotel" height="95" width="65">
+	</div>
+
+	<div id="Ac" setLocation='yes' style='position: absolute; left: 9px; top: 2px'>
+		<img src="img/Sun_animation.svg" id="sun" height="200" width="210">
+	</div>
+
+	<div id="Ad" setLocation='yes' style='position: absolute; left: 9px; top: 2px'>
+		<img src="img/moon-and-stars_OFF.svg" id="moon" height="200" width="210">
+	</div>
+	<div id="Ag" setLocation='yes' style='position: absolute; left: 950px; top: 422px;'>
+		<div id="thermostat_boiler" > </div>
+	</div>
+	<div id="1" setLocation='yes' style='position: absolute; left: 487px; top: 463px'>
+		<div id="plyn_in" > </div>
+	</div>
+	<div id="2" setLocation='yes' style='position: absolute; left: 659px; top: 282px'>
+		<div id="plyn_out" > </div>
+	</div>
+	<div id="3" setLocation='yes' style='position: absolute; left: 880px; top: 331px'>
+		<div id="boiler1" > </div>
+	</div>
+	<div id="4" setLocation='yes' style='position: absolute; left: 882px; top: 607px'>
+		<div id="boiler2" > </div>
+	</div>
+	<div id="5" setLocation='yes' style='position: absolute; left: 460px; top: 12px'>
+		<div id="panel" > </div>
+	</div>
+	<div id="6" setLocation='yes' style='position: absolute; left: 764px; top: 16px'>
+		<div id="clock1"></div>
+	</div>
+	<div id="7" setLocation='yes' style='position: absolute; left: 816px; top: 210px'>
+		<div id="cirkulace1" > </div>
+	</div>
+	<div id="8" setLocation='yes' style='position: absolute; left: 941px; top: 651px'>
+		<div id="cirkulace2" > </div>
+	</div>
+	<div id="9" setLocation='yes' style='position: absolute; left: 995px; top: 349px'>
+		<div id="water">voda</div> l/min.
+	</div>
+	<div id="10" setLocation='yes' style='position: absolute; left: 521px; top: 630px'>
+		<div id="panel_in"></div>
+	</div>
+
+
+	<div setLocation='yes' style='position: absolute;left: 932px; top: 15px'>
+		<img id="off-on-line" src="img/offline.png" width="50px">
+	</div>
+
+</div>
+
+<br>
+
+
+<script>
+//$(document).ready(load_all_svg_images());
+</script>
+</body>
+</html>
